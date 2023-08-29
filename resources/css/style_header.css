@@ -126,12 +126,12 @@ body {
 }
 
 .circle_enterprise {
-    border: 1px solid #222;
+    border: 1px solid #7c761d;
     background-color: #fff239;
 }
 
 .circle_user{
-    border: 1px solid #222;
+    border: 1px solid #1e8831;
     background-color: #39ff5d;
 }
 
