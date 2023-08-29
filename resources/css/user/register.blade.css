@@ -1,0 +1,18 @@
+body {
+    display:flex
+}
+
+form{
+  width: 100%;
+}
+
+.Yuzer{
+    padding:10px;
+    margin-left:20%;
+    background-color: rgb(174, 172, 172);
+}
+.NewYuzer{
+    padding:10px;
+    margin:0 20% 0 10%;
+    background-color: rgb(174, 172, 172);
+}
