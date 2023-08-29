@@ -20,6 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
+        // ユーザ登録画面として呼び出されるview
         return view('auth.register');
     }
 
