@@ -22,6 +22,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/corporate/index', function () {
         return view('corporate.index');
     })->name('corporate.index');
+
+    // for demo
+    Route::get("/property/demo", function(){
+        return view("property.index");
+    })->name("property.index");
 });
 
 require __DIR__.'/auth.php';
