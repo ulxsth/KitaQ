@@ -41,15 +41,15 @@ body, * {
 }
 
 @media (min-width: 600px){
-    .brand {
-        font-weight: bold;
-        font-size: 2rem;
+    .status__wrap img {
+        width: 5rem;
+        height: 5rem;
     }
 }
 @media (max-width: 599px){
-    .brand {
-        font-weight: bold;
-        font-size: 20px;
+    .status__wrap img {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
@@ -68,7 +68,7 @@ body, * {
         justify-content: space-between;
         align-items: center;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 1rem;
     }
 }
 @media (min-width: 600px) {
