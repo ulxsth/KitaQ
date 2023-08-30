@@ -15,7 +15,7 @@
             <ul class="nav__wrapper">
                 <li class="nav__item"><a href="#"><span class="small">企業情報</span>登録</a></li>
                 <li class="nav__item"><a href="#"><span class="small">企業情報</span>更新</a></li>
-                <li class="nav__item"><a href="#">企業検索</a></li>
+                <li class="nav__item"><a href="/corporate/index">企業検索</a></li>
                 <li class="nav__item"><a href="#">ログアウト</a></li>
             </ul>
         </nav>
