@@ -2,98 +2,100 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
-    <link href="../../../resources/css/user/index.blade.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    @vite([
+    'resources/css/user/reset.css',
+    'resources/css/user/style_header.css',
+    'resources/css/user/index.blade.css'
+    ])
 </head>
 
 <body>
-    <table class="menyu" id="MN" border="2" width="auto">
+    @include('templates.header')
+    <div class="flex">
+        <div onclick="location.href = '/property/demo'" class="link">
+            <img alt="no-image" src="../../img/ibm.jpg">
+        </div>
+        <div class="menu" id="MN" width="auto">
+            <div class="table">
+                <p class="tableHead">企業名</p>
+                <p class="tableData">日本アイ・ビー・エム（株）北九州事業所</p>
+            </div>
 
-        <tr>
-            <th rowspan="4"> <a href="../../../resources/img/no-image.jpg"><img class="syasinn" alt="no-imeage" src="../../../resources/img/no-image.jpg"></a></th>
-            <td>企業名</td>
-            <td>ハッカソン</td>
-        </tr>
-        <tr>
-            <td>場所</td>
-            <td>〒802-0077 福岡県北九州市小倉北区馬借１丁目５−２５ ホラヤビル </td>
-        </tr>
-        <tr>
-            <th><a>URL</a></th>
-            <th><a href="https://photos.app.goo.gl/kTYw7XLrSX21xjMx8">https://photos.app.goo.gl/kTYw7XLrSX21xjMx8</a></tb>
-        </tr>
-        <tr>
-            <th>説明</th>
-            <td></td>
-        </tr>
-    </table>
-    <p></p>
+            <div class="table">
+                <p class="tableHead">場所</p>
+                <p class="tableData">〒802-0001 福岡県北九州市小倉北区浅野２丁目１４−２</p>
+            </div>
 
-    <table class="menyu" id="MN" border="2" width="auto">
+            <div class="table">
+                <p class="tableHead">URL</p>
+                <div class="tableData">
+                    <a href="https://www.ibm.com/jp-ja/about/office">https://www.ibm.com/jp-ja/about/office</a>
+                </div>
+            </div>
 
-        <tr>
-            <th rowspan="4"> <a href="../../../resources/img/no-image.jpg"><img class="syasinn" alt="no-imeage" src="../../../resources/img/no-image.jpg"></a></th>
-            <td>企業名</td>
-            <td>ハッカソン</td>
-        </tr>
-        <tr>
-            <td>場所</td>
-            <td>〒802-0077 福岡県北九州市小倉北区馬借１丁目５−２５ ホラヤビル </td>
-        </tr>
-        <tr>
-            <th><a>URL</a></th>
-            <th><a href="https://photos.app.goo.gl/kTYw7XLrSX21xjMx8">https://photos.app.goo.gl/kTYw7XLrSX21xjMx8</a></tb>
-        </tr>
-        <tr>
-            <th>説明</th>
-            <td></td>
-        </tr>
-    </table>
-    <p></p>
+            <div class="table">
+                <p class="tableHead">説明</p>
+                <p class="tableData">
+                    電話番号:0120-339080（フリーダイヤル）<br>
+                    最寄駅: JR 小倉駅北口 徒歩3分
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <img alt="no-image" src="/img/no-image.jpg">
+        <div class="menu" id="MN" width="auto">
+            <div class="table">
+                <p class="tableHead">企業名</p>
+                <p class="tableData">ハッカソン</p>
+            </div>
 
-    <table class="menyu" id="MN" border="2" width="auto">
+            <div class="table">
+                <p class="tableHead">場所</p>
+                <p class="tableData">〒802-0077 福岡県北九州市小倉北区馬借１丁目５−２５ ホラヤビル </p>
+            </div>
 
-        <tr>
-            <th rowspan="4"> <a href="../../../resources/img/no-image.jpg"><img class="syasinn" alt="no-imeage" src="../../../resources/img/no-image.jpg"></a></th>
-            <td>企業名</td>
-            <td>ハッカソン</td>
-        </tr>
-        <tr>
-            <td>場所</td>
-            <td>〒802-0077 福岡県北九州市小倉北区馬借１丁目５−２５ ホラヤビル </td>
-        </tr>
-        <tr>
-            <th><a>URL</a></th>
-            <th><a href="https://photos.app.goo.gl/kTYw7XLrSX21xjMx8">https://photos.app.goo.gl/kTYw7XLrSX21xjMx8</a></tb>
-        </tr>
-        <tr>
-            <th>説明</th>
-            <td></td>
-        </tr>
-    </table>
-    <p></p>
+            <div class="table">
+                <p class="tableHead">URL</p>
+                <div class="tableData">
+                    <a href="https://photos.app.goo.gl/kTYw7XLrSX21xjMx8">https://photos.app.goo.gl/kTYw7XLrSX21xjMx8</a>
+                </div>
+            </div>
 
-    <table class="menyu" id="MN" border="2" width="auto">
+            <div class="table">
+                <p class="tableHead">説明</p>
+                <p class="tableData">説明</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <img alt="no-image" src="../../img/no-image.jpg">
+        <div class="menu" id="MN" width="auto">
+            <div class="table">
+                <p class="tableHead">企業名</p>
+                <p class="tableData">ハッカソン</p>
+            </div>
 
-        <tr>
-            <th rowspan="4"> <a href="../../../resources/img/no-image.jpg"><img class="syasinn" alt="no-imeage" src="../../../resources/img/no-image.jpg"></a></th>
-            <td>企業名</td>
-            <td>ハッカソン</td>
-        </tr>
-        <tr>
-            <td>場所</td>
-            <td>〒802-0077 福岡県北九州市小倉北区馬借１丁目５−２５ ホラヤビル </td>
-        </tr>
-        <tr>
-            <th><a>URL</a></th>
-            <th><a href="https://photos.app.goo.gl/kTYw7XLrSX21xjMx8">https://photos.app.goo.gl/kTYw7XLrSX21xjMx8</a></tb>
-        </tr>
-        <tr>
-            <th>説明</th>
-            <td></td>
-        </tr>
-    </table>
-    <p></p>
+            <div class="table">
+                <p class="tableHead">場所</p>
+                <p class="tableData">〒802-0077 福岡県北九州市小倉北区馬借１丁目５−２５ ホラヤビル </p>
+            </div>
+
+            <div class="table">
+                <p class="tableHead">URL</p>
+                <div class="tableData">
+                    <a href="https://photos.app.goo.gl/kTYw7XLrSX21xjMx8">https://photos.app.goo.gl/kTYw7XLrSX21xjMx8</a>
+                </div>
+            </div>
+
+            <div class="table">
+                <p class="tableHead">説明</p>
+                <p class="tableData">説明</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
