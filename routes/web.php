@@ -19,6 +19,11 @@ Route::get('/', function () {
 });
 
 Route::middleware('auth')->group(function () {
+    // for demo
+    Route::get("/property/demo", function () {
+        return view("property.index");
+    })->name("property.index");
+
     Route::get('/corporate/index', function () {
         return view('corporate.index');
     })->name('corporate.index');
