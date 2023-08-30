@@ -1,4 +1,4 @@
-function toggleChange() {
+export function toggleChange() {
     var navToggle = document.querySelector(".nav__toggle");
     var navWrapper = document.querySelector(".nav__wrapper");
 
