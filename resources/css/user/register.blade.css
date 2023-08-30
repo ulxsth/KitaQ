@@ -1,20 +1,42 @@
 @charset "utf-8";
 
-.login__wrap {
-    display: flex;
+@media (min-width: 600px) {
+    .login__wrap {
+        display: flex;
+    }
+}
+
+@media (min-width: 600px) {
+    form {
+        height: 70vh;
+    }
+}
+@media (max-width: 599px) {
+    form {
+        height: 40vh;
+    }
 }
 
 form{
     width: 100%;
-    height: 70vh;
 }
 
-.user{
+.user {
     padding: 10px;
-    margin: 4rem 3rem;
     background-color: #ececec;
     border-radius: 20px;
     height: 100%;
+}
+
+@media (min-width: 600px) {
+    .user{
+        margin: 4rem 3rem;
+    }
+}
+@media (max-width: 599px) {
+    .user {
+        margin: 1.5rem 2rem;
+    }
 }
 
 input {
@@ -49,4 +71,18 @@ input {
     .login, .rdo {
         margin: 2rem 3rem;
     }
+}
+@media (max-width: 599px) {
+    .txt {
+        height: 1.5rem;
+        width: 70%;
+        margin: 5% 15%;
+    }
+    .login, .rdo {
+        margin: 1rem;
+    }
+}
+
+.login {
+    font-weight: 600;
 }
