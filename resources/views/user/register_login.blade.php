@@ -14,7 +14,7 @@
 <body>
     @include('templates.header')
     <div class="login__wrap">
-        <form action="{{ route("login") }}" method="post">
+        <form action="{{ route('login') }}" method="post">
             @csrf
             <div class="user">
                 <p class="login">ログイン</p>
