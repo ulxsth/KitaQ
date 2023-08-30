@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="wrapper site-header__wrapper">
         <div class="status__wrap">
-            <a href="#" class="brand">(企画名)</a>
+            <img alt="KitaQ" src="../img/logo.png">
             <div class="status">
                 <p class="user_name">[ユーザー名]</p>
                 <div class="circle_enterprise"></div>
